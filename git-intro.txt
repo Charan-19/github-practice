@@ -1,0 +1,93 @@
+==============GIT==============
+GIT: Global Information Tracker
+
+It is a version control system(VCS) or source code management system(SCM).
+
+What is GIT?
+1. Git is used to track the files.
+2. It will maintain multiple versions of the same file.
+3. It is platform independent.
+4. It is free and open-source.
+5. They can handle larger projects efficiently.
+6. They save time and developers can fetch and create pull requests without switching.
+7. It is 3rd generation of version control system.
+8. It is distributed version control system.
+
+Roll back: going back to specific version.
+
+Git tracks changes you made so you have a record of what has been done and you can revert to specific versions. It makes collaboration easy, allowing changes by multiple people to all merged into one source.
+
+GIT Stages:
+
+Working directory:
+In this stage git is only aware of having files in the project.
+It will not track these files until we commit those files.
+
+To move files from working directory to staging area use below command
+Command: git add
+
+Staging area:
+The staging area is like a rough draft space, it's where you can git add the version of a file or multiplr files that you want to save in your next commit.
+In other words, in the next version of your project.
+
+To move files from staging area to project folder use below command
+Command: git commit
+
+Repository:
+Repository in git is considered as your project folder.
+A repository has all the project-related data.
+It contains the collection of the files and also history of changes made to those files.
+
+Types of repositories:
+Local repo: The local repository is everything in your .gitr directory. Mainly what you will see in your local repository are all of your commits. It is the area that save everything.
+
+Remote repo: The remote repository is a git repository that is stored on some remote computer.
+
+central repo: This will be present in our github.
+
+command to install tree
+yum install tree -y(yellowdog updater modifier)
+
+command to install git
+yum install git
+
+sudo: superuser do
+
+to check version: git --version
+
+create an empty repository: git init . (here dot represents current directory)
+
+git add filename
+git add * - It will track all files excluding hidden files
+git add . - It will track all files including hidden files
+git status - to check all files (both untracked and tracked files)
+git commit -m "commit msg" filename
+git log - history of all commits
+git show commitID --name-only - To check file names in a particular commit.
+git rm --cached filename - To untrack files(staging to working directory)
+git rm --cached * - To untrack all files excluding hidden files.
+git rm -r --cached . - To untrack all files including hidden files.
+.gitignore file is used to ignore files which should not be tracked.
+git -f add *- To forcefully track files in gitignore file
+
+
+To configure user details
+git config user.name "saicharan"
+git config user.email "saicharan123@gmail.com"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
